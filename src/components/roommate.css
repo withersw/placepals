@@ -1,0 +1,84 @@
+/* .roommate-card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    transition: transform 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+.roommate-card:hover {
+    transform: scale(1.05);
+}
+
+.roommate-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.roommate-header .location {
+    margin: 4px 0;
+    font-size: 1rem;
+    color: #777;
+}
+
+.roommate-details p {
+    margin: 8px 0;
+    font-size: 1rem;
+    color: #555;
+} */
+
+.roommate-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    width: 400px;
+}
+
+.roommate-card:hover {
+    transform: scale(1.05);
+}
+
+.roommate-card-content {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.profile-picture {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+.roommate-info {
+    flex: 1;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+}
+
+.roommate-name {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.roommate-detail {
+    margin: 4px 0;
+    font-size: 0.9rem;
+    color: #555;
+}

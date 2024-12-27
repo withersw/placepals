@@ -1,0 +1,105 @@
+.messaging-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    padding: 20px;
+  }
+  
+  /* Message Area */
+  .messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align messages to the right */
+  }
+  
+  /* Message Bubbles */
+  .message {
+    max-width: 70%;
+    margin-bottom: 15px;
+    padding: 12px 18px;
+    border-radius: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    word-wrap: break-word;
+    display: inline-block;
+    clear: both;
+  }
+  
+  .my-message {
+    background-color: #48cae4; /* User's message bubble color */
+    color: #fff;
+    align-self: flex-end;
+    border-radius: 20px 20px 0 20px;
+  }
+  
+  .other-message {
+    background-color: #f1f5f9; /* Other person's message bubble color */
+    color: #333;
+    align-self: flex-start;
+    border-radius: 20px 20px 20px 0;
+  }
+  
+  /* Input Area */
+  .input-area {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 10px;
+    width: 100%;
+  }
+  
+  .input-area input {
+    width: 85%; /* Adjust input width */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+  }
+  
+  .input-area input:focus {
+    border-color: #0077b6; /* Accent color when focused */
+  }
+  
+  .input-area button {
+    background-color: #0077b6; /* Accent color */
+    color: #fff;
+    padding: 8px 12px; /* Smaller button */
+    font-size: 14px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    width: auto; /* Let button size adjust based on content */
+  }
+  
+  .input-area button:hover {
+    background-color: #00b4d8; /* Slight hover effect */
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .messaging-container {
+      width: 100%;
+      margin: 20px;
+      padding: 15px;
+    }
+  
+    .input-area input {
+      width: 70%;
+    }
+  
+    .input-area button {
+      font-size: 12px;
+    }
+  }
